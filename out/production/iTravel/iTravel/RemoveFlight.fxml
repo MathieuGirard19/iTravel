@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iTravel.RemoveFlightController">
+   <children>
+      <Label layoutX="186.0" layoutY="27.0" text="Remove Flight">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="135.0" text="Flight:" />
+      <ComboBox fx:id="FlightComboBox" layoutX="191.0" layoutY="169.0" prefHeight="31.0" prefWidth="255.0" />
+      <Button fx:id="CancelButton" layoutX="178.0" layoutY="272.0" mnemonicParsing="false" onAction="#exit" text="Cancel" />
+      <Button fx:id="RemoveButton" layoutX="377.0" layoutY="272.0" mnemonicParsing="false" onAction="#Remove" text="Remove" />
+   </children>
+</AnchorPane>

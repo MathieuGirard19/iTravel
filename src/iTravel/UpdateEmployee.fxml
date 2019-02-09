@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iTravel.UpdateEmployeeController">
+   <children>
+      <Label layoutX="202.0" layoutY="23.0" text="Employee Update">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EmailAddress" layoutX="121.0" layoutY="177.0" />
+      <TextField fx:id="Job" layoutX="121.0" layoutY="249.0" />
+      <TextField fx:id="Status" layoutX="118.0" layoutY="306.0" />
+      <Label layoutX="28.0" layoutY="101.0" text="First Name" />
+      <Label layoutX="312.0" layoutY="101.0" text="Last Name" />
+      <Label layoutX="48.0" layoutY="182.0" text="Email" />
+      <Label layoutX="55.0" layoutY="254.0" text="Job" />
+      <Label layoutX="46.0" layoutY="311.0" text="Status" />
+      <Button fx:id="SaveButton" layoutX="510.0" layoutY="249.0" mnemonicParsing="false" onAction="#update" text="Save" />
+      <Button fx:id="CancelButton" layoutX="424.0" layoutY="249.0" mnemonicParsing="false" onAction="#exit" text="Cancel" />
+      <ComboBox fx:id="EmployeeFirstNameComboBox" layoutX="118.0" layoutY="96.0" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="EmployeeLastNameComboBox" layoutX="401.0" layoutY="96.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>
